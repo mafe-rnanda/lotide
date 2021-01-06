@@ -4,16 +4,16 @@ const assertEqual = function(actual, expected) {
       let element1 = actual[i];
       let element2 = expected[i];
       if (element1 !== element2) {
-        console.log(`🛑 Assertion Failed: ${actual} !== expected`);
+        console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
         return;
       }
     }
-    console.log(`✅ Assertion Passed: ${actual} === expected`);
+    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
     if (actual === expected) {
-      console.log(`✅ Assertion Passed: ${actual} === expected`);
+      console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
     } else {
-      console.log(`🛑 Assertion Failed: ${actual} !== expected`);
+      console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
     }
   }
 };
@@ -23,8 +23,6 @@ const assertEqual = function(actual, expected) {
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual("Maria", "MARIA");
-
-
 
 
 const tail = function(array) {
