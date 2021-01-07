@@ -19,7 +19,7 @@ const countLetters = function(sentence) {
   for (const letter of sentence) {
     //console.log(letter);
     if (letter !== " ") {
-      //console.log('found a letter not a space');
+      //console.log('found a space');
        //console.log(results[letter]);
       if (results[letter]) {
         //console.log('this has a value')
@@ -33,7 +33,7 @@ const countLetters = function(sentence) {
   return results;
 };
 
-//TEST CODE
+
 console.log(countLetters("lighthouse"));
 console.log(countLetters("week one")); 
 console.log(countLetters("coding is hard"));
