@@ -1,5 +1,4 @@
-// do not remove
-const assertEqual = require('./assertEqual');
+//const assertEqual = require('./assertEqual');
 
 // Function to retrieve the first element from the array
 const head = function(array) {
