@@ -8,17 +8,26 @@ const assertEqual = function (actual, expected) {
 
 //return the first key for which the callback returns a truthy value. If no key is found, then it should return undefined.
 
-const findKey = function (planetsObj, callback){
-  for (const planet in planetsObj) {
-      const starsObj = planetsObj[planet];
-      if (callback(starsObj)){
-        return planet;
-      }
+
+const findKey = function (obj, callback){
+  for (const key in obj) {
+    const objValue = obj[key];
+    if (callback(objValue)){
+      return key;
+    }
   }
 };
- 
-////// ANOTHER WAY TO APPROACH IT//////
 
+////// ANOTHER WAY TO APPROACH IT//////
+// const findKey = function (planetsObj, callback){
+//   for (const planet in planetsObj) {
+//       const starsObj = planetsObj[planet];
+//       if (callback(starsObj)){
+//         return planet;
+//       }
+//   }
+// };
+//OR///
 // const findKey = function (object, callback){
 //   let hold = ''
 //   let value1 = Object.values(object)
