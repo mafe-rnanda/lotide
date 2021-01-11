@@ -1,0 +1,32 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mafe-rnanda/lotide.git"
+  },
+  "keywords": [
+    "lotide",
+    "mocha",
+    "chai",
+    "assertions"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mafe-rnanda/lotide/issues"
+  },
+  "homepage": "https://github.com/mafe-rnanda/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
