@@ -15,30 +15,28 @@ const assertArraysEqual = function (actual, expected) {
   return eqArrays(actual, expected)
     ? `✅ Assertion Passed: ${actual} === ${expected}`
     : `🛑 Assertion Failed: ${actual} !== ${expected}`;
-
 };
 
 // return all the indices (zero-based positions) in the string where each character is found
-const letterPositions = function(sentence) {
+const letterPositions = function (sentence) {
   const results = {};
   let counter = 0;
   for (const letter of sentence) {
     //console.log(letter);
-   if (letter !== " ") {
-    // using if when running letter first time
-    if (!results[letter]) {
-      results[letter] = [];
-      results[letter].push(sentence.indexOf(letter))
-    } else {
-      let positions = results[letter];
-      results[letter].push(sentence.indexOf(letter, counter));
+    if (letter !== " ") {
+      // using if when running letter first time
+      if (!results[letter]) {
+        results[letter] = [];
+        results[letter].push(sentence.indexOf(letter));
+      } else {
+        let positions = results[letter];
+        results[letter].push(sentence.indexOf(letter, counter));
+      }
     }
+    counter += 1;
   }
-  counter += 1;
-}
   return results;
 };
-
 
 ////// TEST CODE ////////
 // console.log(letterPositions('lll'));

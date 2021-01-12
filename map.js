@@ -11,7 +11,7 @@ const eqArrays = function (arr1, arr2) {
   return true;
 };
 
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   return eqArrays(actual, expected)
     ? `✅ Assertion Passed: ${actual} === ${expected}`
     : `🛑 Assertion Failed: ${actual} !== ${expected}`;
@@ -25,7 +25,7 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
   return results;
-}
+};
 
 ///////// TEST CODE //////////
 // const words = ["ground", "control", "to", "major", "tom"];

@@ -32,7 +32,7 @@ const takeUntil = function(array, callBack) {
     }
   }
   return newArr;
-}
+};
 
 ///////// TEST CODE /////////
 // const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];

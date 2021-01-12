@@ -8,11 +8,10 @@ const assertEqual = function (actual, expected) {
 
 //return the first key for which the callback returns a truthy value. If no key is found, then it should return undefined.
 
-
-const findKey = function (obj, callback){
+const findKey = function (obj, callback) {
   for (const key in obj) {
     const objValue = obj[key];
-    if (callback(objValue)){
+    if (callback(objValue)) {
       return key;
     }
   }

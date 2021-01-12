@@ -21,7 +21,7 @@ const middle = function (array) {
       array[Math.round(array.length / 2)],
     ];
   }
-  return middleIndex; 
+  return middleIndex;
 };
 
 module.exports = middle;
