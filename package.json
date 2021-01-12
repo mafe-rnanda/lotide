@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@mafe-rnanda/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,10 @@
     "chai",
     "assertions"
   ],
-  "author": "",
+  "author": {
+    "name": "Maria Chavez",
+    "email": "mf.chavezminjarez@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mafe-rnanda/lotide/issues"
