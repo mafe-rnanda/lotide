@@ -27,12 +27,14 @@ const map = function(array, callback) {
   return results;
 }
 
+///////// TEST CODE //////////
 // const words = ["ground", "control", "to", "major", "tom"];
 // const results1 = map(words, word => word[0]);
 // console.log(results1);
 
-const myCallBackExpression = word => word[0];
+// const myCallBackExpression = word => word[0];
+// console.log(assertArraysEqual(map(["good", "morning"],myCallBackExpression),["g", "m"]))
+// console.log(assertArraysEqual(map(["buenos", "dias"], myCallBackExpression),["b", "d"]))
+// console.log(assertArraysEqual(map(["bonjour", "madame"], word => word[0]),["x", "x"]))
 
-console.log(assertArraysEqual(map(["good", "morning"],myCallBackExpression),["g", "m"]))
-console.log(assertArraysEqual(map(["buenos", "dias"], myCallBackExpression),["b", "d"]))
-console.log(assertArraysEqual(map(["bonjour", "madame"], word => word[0]),["x", "x"]))
+module.exports = map;

@@ -28,8 +28,12 @@ const assertObjectsEquals = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
+
+////// TEST CODE ////
 // console.log(`Example label: ${inspect(actual)}`);
-console.log(eqObjects(ab, ab));
-console.log(eqObjects(ab, ba)); 
-assertEqual(eqObjects(ab, ab), true);
-assertEqual(eqObjects(ab, ba), false)
+// console.log(eqObjects(ab, ab));
+// console.log(eqObjects(ab, ba)); 
+// assertEqual(eqObjects(ab, ab), true);
+// assertEqual(eqObjects(ab, ba), false);
+
+module.exports = assertObjectsEquals;
